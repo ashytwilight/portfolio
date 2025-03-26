@@ -333,7 +333,31 @@
                     aria-label="Experience Icon"
                   />
                   <div>
+                    <h3 aria-label="MongoDB">MongoDB</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                    aria-label="Experience Icon"
+                  />
+                  <div>
                     <h3 aria-label="Git">Git</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                    aria-label="Experience Icon"
+                  />
+                  <div>
+                    <h3 aria-label="Docker">Docker</h3>
                     <p>Intermediate</p>
                   </div>
                 </article>
@@ -477,7 +501,14 @@
               class="icon contact-icon email-icon"
               aria-label="Email icon"
             />
-            <p><a>Mail@mail.com</a></p>
+            <p>
+              <a
+                href="mailto:hsiungwang226@mail.com"
+                onmouseover="this.style.color='#4b5563'"
+                onmouseout="this.style.color='black'"
+                >hsiungwang226@mail.com</a
+              >
+            </p>
           </div>
           <div class="contact-info-container">
             <img
@@ -486,71 +517,89 @@
               class="icon contact-icon"
               aria-label="LinkedIn icon"
             />
-            <p><a>LinkedIn</a></p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/hsiangwen-cheng-6131ab178/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onmouseover="this.style.color='#4b5563'"
+                onmouseout="this.style.color='black'"
+                >LinkedIn</a
+              >
+            </p>
           </div>
         </div>
         <div class="contact-input-container" aria-label="Contact Form">
-          <div class="row">
-            <div class="col-25">
-              <label for="name" aria-label="Name Label">Name</label>
+          <form
+            action="https://formsubmit.co/hsiungwang226@gmail.com"
+            method="POST"
+          >
+            <div class="row">
+              <div class="col-25">
+                <label for="name" aria-label="Name Label">Name</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="name"
+                  name="firstname"
+                  placeholder="Your name.."
+                  aria-label="Enter your name"
+                />
+              </div>
             </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="name"
-                name="firstname"
-                placeholder="Your name.."
-                aria-label="Enter your name"
-              />
+            <div class="row">
+              <div class="col-25">
+                <label for="email" aria-label="Email Label">Email</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address.."
+                  aria-label="Enter your email address"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="email" aria-label="Email Label">Email</label>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject" aria-label="Subject Label">Subject</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Your contact subject.."
+                  aria-label="Enter the subject"
+                />
+              </div>
             </div>
-            <div class="col-75">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your email address.."
-                aria-label="Enter your email address"
-              />
+            <div class="row">
+              <div class="col-25">
+                <label for="message" aria-label="Message Label">Message</label>
+              </div>
+              <div class="col-75">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write something.."
+                  style="height: 100px"
+                  aria-label="Write something"
+                ></textarea>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="subject" aria-label="Subject Label">Subject</label>
+            <div class="row">
+              <button
+                type="submit"
+                class="btn message-btn"
+                aria-label="Submit Button"
+              >
+                Submit
+              </button>
             </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Your contact subject.."
-                aria-label="Enter the subject"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="message" aria-label="Message Label">Message</label>
-            </div>
-            <div class="col-75">
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Write something.."
-                style="height: 100px"
-                aria-label="Write something"
-              ></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <button class="btn message-btn" aria-label="Submit Button">
-              Submit
-            </button>
-          </div>
+          </form>
         </div>
       </section>
       <footer aria-label="Footer section">

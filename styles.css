@@ -72,12 +72,11 @@ a {
   color: white;
   text-decoration: none;
   text-decoration-color: white;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
-  text-underline-offset: 16px;
-  text-decoration-color: white;
+  text-decoration: none;
 }
 
 #logo_name:hover {
@@ -226,7 +225,7 @@ section {
 /* ICONS */
 
 .icon {
-  cursor: pointer;
+  /* cursor: pointer; */
   height: 32px;
 }
 
@@ -286,6 +285,7 @@ section {
 .arrow {
   position: absolute;
   right: -80px;
+  cursor: pointer;
 }
 
 .details-container {
@@ -369,9 +369,9 @@ article .icon {
   position: relative;
 }
 
-.details-container.color-container:hover {
+/* .details-container.color-container:hover {
   background-color: rgb(240, 240, 240);
-}
+} */
 
 .color-container {
   border-color: rgb(163, 163, 163);
